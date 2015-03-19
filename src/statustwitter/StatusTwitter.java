@@ -31,10 +31,10 @@ twitter = new TwitterFactory(cb.build()).getInstance();
 
 Paging pagina = new Paging();
      
-        Twitter andypsamp = new TwitterFactory().getInstance();
+        Twitter andy10 = new TwitterFactory().getInstance();
  
         Query query = new Query("#Cangas");
-        QueryResult result = andypsamp.search(query);
+        QueryResult result = andy10.search(query);
         for (Status status : result.getTweets()) {
             System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
         }
